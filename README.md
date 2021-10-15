@@ -9,13 +9,13 @@ This readme uses [podman][podman], but other managers should work as well.
 This image comes with a build script, which will take a gluon version as well as the the site config source via environment variables.
 See `example.env`.
 
-A volume will be created the complete build output.
+A volume will be created for the complete build output.
 
 ```
-podman run --env-file example.env --volume /path/on/host:/build gluon
+podman run --env-file example.env --volume </path/on/host>:/build gluon
 ```
 
-If built successfully built, images will be under `/path/on/host/output/images`.
+If built successfully built, images will be under `</path/on/host>/output/images`.
 
 ## Build
 
